@@ -1,31 +1,27 @@
 import "./App.css";
 import User from "./components/User";
+import UserDemo from "./components/UserDemo";
 
-const user1 = {
-  name: "Abu Bokkor Siddik",
-  age: 27,
-  isVerified: false,
-  lang: ["english", " bangla"],
-};
-const user2 = {
-  name: "Sumaiya Akter",
-  age: 23,
-  isVerified: true,
-  lang: ["english", " bangla"],
-};
+const users = [
+  {
+    id: 1,
+    name: "AB",
+    email: "abcd@gmail.com",
+    age: 32,
+  },
+  {
+    id: 2,
+    name: "CD",
+    email: "cd@gmail.com",
+    age: 30,
+  },
+];
 
 function App() {
   return (
     <>
       <h1>React Typescript</h1>
-      {/* <User
-        name={"Abu Bokkor Siddik"}
-        age={27}
-        isVerified={false}
-        lang={["english", " bangla"]}
-      /> */}
-      <User user={user1} />
-      <User user={user2} />
+      <UserDemo users={users} />
     </>
   );
 }
