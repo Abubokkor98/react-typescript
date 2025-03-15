@@ -1,11 +1,11 @@
-import NewUser from "./components/NewUser";
+import CreateUser from "./components/CreateUser";
 
 function App() {
   return (
     <div className="text-center">
-      <h1 className="font-bold text-5xl mb-3">Typing events</h1>
+      <h1 className="font-bold text-5xl mb-3">Typing Form events</h1>
       <hr />
-      <NewUser/>
+     <CreateUser/>
     </div>
   );
 }
